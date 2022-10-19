@@ -5,15 +5,17 @@ using UnityEngine;
 public class Player_Movement : MonoBehaviour
 {
     Rigidbody rb;
+    AudioSource audioSource;
 
     [SerializeField] float upThrust = 1000f;
     [SerializeField] float rotateThrust = 100f;
-
+    [SerializeField] AudioClip engineSound;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();  
     }
 
     // Update is called once per frame
@@ -27,7 +29,17 @@ public class Player_Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            rb.AddRelativeForce(Vector3.forward * Time.deltaTime * upThrust); //Adding relative force to bottom of rocket regardless how rocket is positioned within game
+            //Adding relative force to bottom of rocket regardless how rocket is positioned within game
+            rb.AddRelativeForce(Vector3.forward * Time.deltaTime * upThrust);
+
+            if (!audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(engineSound);
+            }
+        }
+        else
+        {
+            audioSource.Stop();
         }
     }
     void ProcessThrust()
