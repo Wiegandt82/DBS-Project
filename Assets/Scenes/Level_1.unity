@@ -820,14 +820,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4563042592886533, guid: c4fa570ca66ac7e4cbb24db2211297f6, type: 3}
-      propertyPath: successSound
-      value: 
-      objectReference: {fileID: 8300000, guid: fa7bdcd4736620545a6d42f2ac13b803, type: 3}
-    - target: {fileID: 4563042592886533, guid: c4fa570ca66ac7e4cbb24db2211297f6, type: 3}
-      propertyPath: delayLoadScene
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4325362383347568653, guid: c4fa570ca66ac7e4cbb24db2211297f6,
         type: 3}
       propertyPath: m_Name
