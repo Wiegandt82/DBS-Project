@@ -8,8 +8,13 @@ public class CollisionHandler : MonoBehaviour
     [SerializeField] float delayLoadScene = 1f;
     [SerializeField] AudioClip crashSound;
     [SerializeField] AudioClip successSound;
+    [SerializeField] ParticleSystem crashParticle;
+    [SerializeField] ParticleSystem successParticle;
+    
 
     AudioSource audioSource;
+
+    bool isTransitioning = false;
 
     void Start()
     {
@@ -17,6 +22,8 @@ public class CollisionHandler : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
+        if (isTransitioning) { return; }    //if isTransitioning is true return
+
         switch (collision.gameObject.tag)
         {
             case "Friendly":
@@ -27,18 +34,6 @@ public class CollisionHandler : MonoBehaviour
                 SuccessSeequence();
                 break;
 
-<<<<<<< Updated upstream
-            case "Point":
-                Debug.Log("Point collected");
-                break;
-
-            case "Life":
-                //create login for lives collection + sound etc
-                Debug.Log("Life collected");
-                break;
-
-=======
->>>>>>> Stashed changes
             default:
                 CrashSeequence();
                 break;
@@ -47,29 +42,21 @@ public class CollisionHandler : MonoBehaviour
 
     void SuccessSeequence()
     {
-<<<<<<< Updated upstream
-        GetComponent<Player_Movement>().enabled = false;
-=======
         isTransitioning = true;
         GetComponent<PlayerMovement>().enabled = false;
         audioSource.Stop();                                 //will stop all sounds prior of playing success sound next
->>>>>>> Stashed changes
         audioSource.PlayOneShot(successSound);
-        //add particle effect
+        successParticle.Play();
         Invoke("LoadNextLevel", delayLoadScene);
     }
 
     void CrashSeequence()
     {
-<<<<<<< Updated upstream
-=======
         isTransitioning = true;
         GetComponent<PlayerMovement>().enabled = false;
         audioSource.Stop();                                 //will stop all sounds prior of playing success sound next
->>>>>>> Stashed changes
         audioSource.PlayOneShot(crashSound);
-        //add particle effect on crash
-        GetComponent<Player_Movement>().enabled = false;
+        crashParticle.Play();
         Invoke("ReloadLevel", delayLoadScene);
         
     }

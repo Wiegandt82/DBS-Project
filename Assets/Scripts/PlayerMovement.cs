@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    Rigidbody rb;
-    AudioSource audioSource;
-
     [SerializeField] float upThrust = 1000f;
     [SerializeField] float rotateThrust = 100f;
     [SerializeField] AudioClip engineSound;
+    [SerializeField] ParticleSystem mainBoosterParticle;
+    [SerializeField] ParticleSystem leftBoosterParticle;
+    [SerializeField] ParticleSystem rightBoosterParticle;
+
+    Rigidbody rb;
+    AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -36,10 +39,17 @@ public class PlayerMovement : MonoBehaviour
             {
                 audioSource.PlayOneShot(engineSound);
             }
+
+            if (!mainBoosterParticle.isPlaying)
+            {
+                mainBoosterParticle.Play();
+            }
+            
         }
         else
         {
             audioSource.Stop();
+            mainBoosterParticle.Stop();
         }
     }
     void ProcessThrust()
@@ -47,17 +57,35 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             ApplyRotation(-rotateThrust);
+
+            if (!rightBoosterParticle.isPlaying)
+            {
+                rightBoosterParticle.Play();
+            }
+            else
+            {
+                rightBoosterParticle.Stop();
+            }
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
             ApplyRotation(rotateThrust);
+
+            if (!leftBoosterParticle.isPlaying)
+            {
+                leftBoosterParticle.Play();
+            }
+            else
+            {
+                leftBoosterParticle.Stop();
+            }
         }
     }
 
     void ApplyRotation(float rotationThisFrame)
     {
         rb.freezeRotation = true;                                               //freeze rotation so we can manually apply rotation
-        transform.Rotate(Vector3.up * Time.deltaTime * rotationThisFrame); //applying rotatotion manually
+        transform.Rotate(Vector3.up * Time.deltaTime * rotationThisFrame);      //applying rotatotion manually
         rb.freezeRotation = false;                                              //unfreezing rotation so physics system can take over
     }
 }
