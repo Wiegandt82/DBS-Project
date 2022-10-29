@@ -23,15 +23,11 @@ public class CollisionHandler : MonoBehaviour
                 Debug.Log("Friendly no action");
                 break;
 
-            case "Fuel":
-                //create mechanic for fuel, sound etc
-                Debug.Log("Fuel Collected");
-                break;
-
-            case "Finish":
+           case "Finish":
                 SuccessSeequence();
                 break;
 
+<<<<<<< Updated upstream
             case "Point":
                 Debug.Log("Point collected");
                 break;
@@ -41,6 +37,8 @@ public class CollisionHandler : MonoBehaviour
                 Debug.Log("Life collected");
                 break;
 
+=======
+>>>>>>> Stashed changes
             default:
                 CrashSeequence();
                 break;
@@ -49,7 +47,13 @@ public class CollisionHandler : MonoBehaviour
 
     void SuccessSeequence()
     {
+<<<<<<< Updated upstream
         GetComponent<Player_Movement>().enabled = false;
+=======
+        isTransitioning = true;
+        GetComponent<PlayerMovement>().enabled = false;
+        audioSource.Stop();                                 //will stop all sounds prior of playing success sound next
+>>>>>>> Stashed changes
         audioSource.PlayOneShot(successSound);
         //add particle effect
         Invoke("LoadNextLevel", delayLoadScene);
@@ -57,6 +61,12 @@ public class CollisionHandler : MonoBehaviour
 
     void CrashSeequence()
     {
+<<<<<<< Updated upstream
+=======
+        isTransitioning = true;
+        GetComponent<PlayerMovement>().enabled = false;
+        audioSource.Stop();                                 //will stop all sounds prior of playing success sound next
+>>>>>>> Stashed changes
         audioSource.PlayOneShot(crashSound);
         //add particle effect on crash
         GetComponent<Player_Movement>().enabled = false;
