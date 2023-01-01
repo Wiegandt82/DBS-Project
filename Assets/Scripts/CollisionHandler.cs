@@ -8,6 +8,13 @@ public class CollisionHandler : MonoBehaviour
     [SerializeField] float delayLoadScene = 1f;
     [SerializeField] AudioClip crashSound;
     [SerializeField] AudioClip successSound;
+<<<<<<< Updated upstream
+=======
+    [SerializeField] ParticleSystem crashParticle;
+    [SerializeField] ParticleSystem successParticle;
+
+    GameBehaviour gameManager;
+>>>>>>> Stashed changes
 
     AudioSource audioSource;
 
@@ -32,6 +39,7 @@ public class CollisionHandler : MonoBehaviour
                 SuccessSeequence();
                 break;
 
+<<<<<<< Updated upstream
             case "Point":
                 Debug.Log("Point collected");
                 break;
@@ -39,6 +47,10 @@ public class CollisionHandler : MonoBehaviour
             case "Life":
                 //create login for lives collection + sound etc
                 Debug.Log("Life collected");
+=======
+            case "GameOver":
+                EndGameSeequence();
+>>>>>>> Stashed changes
                 break;
 
             default:
@@ -55,13 +67,23 @@ public class CollisionHandler : MonoBehaviour
         Invoke("LoadNextLevel", delayLoadScene);
     }
 
-    void CrashSeequence()
+    public void CrashSeequence()
     {
         audioSource.PlayOneShot(crashSound);
+<<<<<<< Updated upstream
         //add particle effect on crash
         GetComponent<Player_Movement>().enabled = false;
         Invoke("ReloadLevel", delayLoadScene);
         
+=======
+        crashParticle.Play();
+        gameManager.Lives--;
+
+        if (gameManager.Lives > 0)
+        {
+            Invoke("ReloadLevel", delayLoadScene);
+        }
+>>>>>>> Stashed changes
     }
 
     void ReloadLevel()
@@ -80,5 +102,13 @@ public class CollisionHandler : MonoBehaviour
             nextSceneIndex = 0;
         }
         SceneManager.LoadScene(nextSceneIndex);
+    }
+
+    void EndGameSeequence()
+    {
+        GetComponent<PlayerMovement>().enabled = false;
+        gameManager.GameOverButton.gameObject.SetActive(true);
+        audioSource.Stop();                                 //will stop all sounds prior of playing success sound next
+        audioSource.PlayOneShot(successSound);
     }
 }
