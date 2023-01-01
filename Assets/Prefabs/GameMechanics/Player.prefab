@@ -131,16 +131,13 @@ GameObject:
   - component: {fileID: 4324984676285528534}
   - component: {fileID: 4563042592886532}
   - component: {fileID: 4563042592886533}
-<<<<<<< Updated upstream:Assets/Prefabs/Player.prefab
-=======
   - component: {fileID: 4563042592886534}
   - component: {fileID: 4563042592886535}
   - component: {fileID: 4563042592886536}
   - component: {fileID: 4563042592886537}
->>>>>>> Stashed changes:Assets/Prefabs/GameMechanics/Player.prefab
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -153,12 +150,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4325362383347568653}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -52.55, y: 4.42, z: 0.19}
+  m_LocalPosition: {x: -52.55, y: 4.42, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
-<<<<<<< Updated upstream:Assets/Prefabs/Player.prefab
-  m_Children: []
-=======
   m_Children:
   - {fileID: 4604310207022912776}
   - {fileID: 7917678295514640399}
@@ -167,7 +161,6 @@ Transform:
   - {fileID: 6387418937458468135}
   - {fileID: 1428611062703627904}
   - {fileID: 2395090895089958757}
->>>>>>> Stashed changes:Assets/Prefabs/GameMechanics/Player.prefab
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
@@ -267,13 +260,10 @@ MonoBehaviour:
   rotateThrust: 150
   fuelUsage: 5
   engineSound: {fileID: 8300000, guid: 7cb22a98084a8bc44a8e4b8f4bd7479b, type: 3}
-<<<<<<< Updated upstream:Assets/Prefabs/Player.prefab
-=======
   mainBoosterParticle: {fileID: 5209611371436838470}
   leftBoosterParticle: {fileID: 5747912068859053036}
   rightBoosterParticle: {fileID: 6518622551226402995}
   baseInterval: 1
->>>>>>> Stashed changes:Assets/Prefabs/GameMechanics/Player.prefab
 --- !u!82 &4563042592886532
 AudioSource:
   m_ObjectHideFlags: 0
@@ -284,7 +274,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7cb22a98084a8bc44a8e4b8f4bd7479b, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -382,11 +372,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26aad45ddfd0d7f44abd8a42336c7e86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayLoadScene: 1
+  delayLoadScene: 2
   crashSound: {fileID: 8300000, guid: 0300c87a460854c4f872e3150f2579d1, type: 3}
   successSound: {fileID: 8300000, guid: fa7bdcd4736620545a6d42f2ac13b803, type: 3}
-<<<<<<< Updated upstream:Assets/Prefabs/Player.prefab
-=======
   crashParticle: {fileID: 4407730939713291088}
   successParticle: {fileID: 8021461696156132445}
 --- !u!114 &4563042592886534
@@ -1337,4 +1325,3 @@ ParticleSystem:
     type: 3}
   m_PrefabInstance: {fileID: 7779765268653693272}
   m_PrefabAsset: {fileID: 0}
->>>>>>> Stashed changes:Assets/Prefabs/GameMechanics/Player.prefab

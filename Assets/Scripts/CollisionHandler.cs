@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,49 +6,36 @@ public class CollisionHandler : MonoBehaviour
     [SerializeField] float delayLoadScene = 1f;
     [SerializeField] AudioClip crashSound;
     [SerializeField] AudioClip successSound;
-<<<<<<< Updated upstream
-=======
     [SerializeField] ParticleSystem crashParticle;
     [SerializeField] ParticleSystem successParticle;
 
     GameBehaviour gameManager;
->>>>>>> Stashed changes
 
     AudioSource audioSource;
 
+    bool isTransitioning = false;
+
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();  
+        audioSource = GetComponent<AudioSource>();
+        gameManager = GameObject.Find("Game_Manager").GetComponent<GameBehaviour>();
     }
     void OnCollisionEnter(Collision collision)
     {
+        if (isTransitioning) { return; }    //if isTransitioning is true return
+
         switch (collision.gameObject.tag)
         {
             case "Friendly":
                 Debug.Log("Friendly no action");
                 break;
 
-            case "Fuel":
-                //create mechanic for fuel, sound etc
-                Debug.Log("Fuel Collected");
-                break;
-
-            case "Finish":
+           case "Finish":
                 SuccessSeequence();
                 break;
 
-<<<<<<< Updated upstream
-            case "Point":
-                Debug.Log("Point collected");
-                break;
-
-            case "Life":
-                //create login for lives collection + sound etc
-                Debug.Log("Life collected");
-=======
             case "GameOver":
                 EndGameSeequence();
->>>>>>> Stashed changes
                 break;
 
             default:
@@ -61,21 +46,20 @@ public class CollisionHandler : MonoBehaviour
 
     void SuccessSeequence()
     {
-        GetComponent<Player_Movement>().enabled = false;
+        isTransitioning = true;
+        GetComponent<PlayerMovement>().enabled = false;
+        audioSource.Stop();                                 //will stop all sounds prior of playing success sound next
         audioSource.PlayOneShot(successSound);
-        //add particle effect
+        successParticle.Play();
         Invoke("LoadNextLevel", delayLoadScene);
     }
 
     public void CrashSeequence()
     {
+        isTransitioning = true;
+        GetComponent<PlayerMovement>().enabled = false;
+        audioSource.Stop();                                 //will stop all sounds prior of playing success sound next
         audioSource.PlayOneShot(crashSound);
-<<<<<<< Updated upstream
-        //add particle effect on crash
-        GetComponent<Player_Movement>().enabled = false;
-        Invoke("ReloadLevel", delayLoadScene);
-        
-=======
         crashParticle.Play();
         gameManager.Lives--;
 
@@ -83,7 +67,6 @@ public class CollisionHandler : MonoBehaviour
         {
             Invoke("ReloadLevel", delayLoadScene);
         }
->>>>>>> Stashed changes
     }
 
     void ReloadLevel()

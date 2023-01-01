@@ -123,10 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
-<<<<<<< Updated upstream
---- !u!1 &330585543
-GameObject:
-=======
 --- !u!4 &1311485 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6894898211315478692, guid: 7c6643ac23f78d64abb658db6f3be0d3,
@@ -661,7 +657,6 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &176751940
 PrefabInstance:
->>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
@@ -1325,37 +1320,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-<<<<<<< Updated upstream
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!114 &410087042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410087039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Version: 1
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
---- !u!1001 &487995451
-=======
   m_Father: {fileID: 2094264439}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &297322156
->>>>>>> Stashed changes
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1370,11 +1338,7 @@ PrefabInstance:
     - target: {fileID: 5403740480527423076, guid: 786ca8b05c51d524096c16eb82c280a0,
         type: 3}
       propertyPath: m_RootOrder
-<<<<<<< Updated upstream
-      value: 3
-=======
       value: 32
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 5403740480527423076, guid: 786ca8b05c51d524096c16eb82c280a0,
         type: 3}
@@ -1594,42 +1558,6 @@ Transform:
   m_Children:
   - {fileID: 1166993088}
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1041619710
-GameObject:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1041619711}
-  - component: {fileID: 1041619714}
-  - component: {fileID: 1041619712}
-  m_Layer: 0
-  m_Name: cm
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1041619711
-Transform:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1041619710}
-  m_LocalRotation: {x: 0.028804, y: -0.009591657, z: 0.00027691876, w: -0.999539}
-  m_LocalPosition: {x: 52.639027, y: -6.4614043, z: 25.163513}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1166993088}
-=======
->>>>>>> Stashed changes
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &330585547
@@ -1677,9 +1605,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
---- !u!1 &1166993087
-=======
   m_ShowDebugText: 0
   m_ShowCameraFrustum: 1
   m_IgnoreTimeScale: 0
@@ -1882,7 +1807,6 @@ CanvasRenderer:
   m_GameObject: {fileID: 396459279}
   m_CullTransparentMesh: 0
 --- !u!1 &410087039
->>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8546,50 +8470,6 @@ PrefabInstance:
 --- !u!1001 &5160084937585960077
 PrefabInstance:
   m_ObjectHideFlags: 0
-<<<<<<< Updated upstream
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1166993087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ExcludedPropertiesInInspector:
-  - m_Script
-  m_LockStageInInspector: 
-  m_StreamingVersion: 20170927
-  m_Priority: 10
-  m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 4563042592886526}
-  m_Lens:
-    FieldOfView: 60
-    OrthographicSize: 5
-    NearClipPlane: 0.3
-    FarClipPlane: 1000
-    Dutch: 0
-    ModeOverride: 0
-    LensShift: {x: 0, y: 0}
-    GateFit: 2
-    m_SensorSize: {x: 1, y: 1}
-  m_Transitions:
-    m_BlendHint: 0
-    m_InheritPosition: 0
-    m_OnCameraLive:
-      m_PersistentCalls:
-        m_Calls: []
-  m_LegacyBlendHint: 0
-  m_ComponentOwner: {fileID: 1041619711}
---- !u!4 &4563042592886526 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4329464154920957747, guid: c4fa570ca66ac7e4cbb24db2211297f6,
-    type: 3}
-  m_PrefabInstance: {fileID: 4324984676285528525}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1497885266284392025
-=======
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 796479542}
@@ -8795,7 +8675,6 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e87bd6b48b5c14458c4723800de7f72, type: 3}
 --- !u!1001 &6417927962546906503
->>>>>>> Stashed changes
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -8880,22 +8759,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-    - target: {fileID: 1499554928886912942, guid: 0c77a3890fa9ebf45b2d47ed52bdce89,
-        type: 3}
-      propertyPath: m_TagString
-      value: Friendly
-      objectReference: {fileID: 0}
-    - target: {fileID: 1502425284798386468, guid: 0c77a3890fa9ebf45b2d47ed52bdce89,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-=======
     - target: {fileID: 6417927962448353542, guid: 44a276d11f043404585db859a970259a,
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 6417927962448353542, guid: 44a276d11f043404585db859a970259a,
         type: 3}
@@ -8985,11 +8852,7 @@ PrefabInstance:
     - target: {fileID: 6564417496251495959, guid: 07b780e125ae11c42b59f68e41699b7f,
         type: 3}
       propertyPath: m_RootOrder
-<<<<<<< Updated upstream
-      value: 1
-=======
       value: 13
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 6564417496251495959, guid: 07b780e125ae11c42b59f68e41699b7f,
         type: 3}
@@ -8999,11 +8862,7 @@ PrefabInstance:
     - target: {fileID: 6564417496251495959, guid: 07b780e125ae11c42b59f68e41699b7f,
         type: 3}
       propertyPath: m_LocalPosition.y
-<<<<<<< Updated upstream
-      value: 6.07
-=======
       value: -3.156464
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 6564417496251495959, guid: 07b780e125ae11c42b59f68e41699b7f,
         type: 3}
@@ -9046,10 +8905,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-<<<<<<< Updated upstream
-  m_SourcePrefab: {fileID: 100100000, guid: 774f6002005d3d44f949e57d91d7bd07, type: 3}
---- !u!1001 &4324984676285528525
-=======
   m_SourcePrefab: {fileID: 100100000, guid: 07b780e125ae11c42b59f68e41699b7f, type: 3}
 --- !u!1001 &8215209980423097502
 PrefabInstance:
@@ -9121,27 +8976,13 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9972b34c25bde6d4c9afa738b818b9b5, type: 3}
 --- !u!1001 &8774916431317205936
->>>>>>> Stashed changes
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 796479542}
     m_Modifications:
-<<<<<<< Updated upstream
-    - target: {fileID: 4563042592886532, guid: c4fa570ca66ac7e4cbb24db2211297f6, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 7cb22a98084a8bc44a8e4b8f4bd7479b, type: 3}
-    - target: {fileID: 4324984676285528531, guid: c4fa570ca66ac7e4cbb24db2211297f6,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4325362383347568653, guid: c4fa570ca66ac7e4cbb24db2211297f6,
-=======
     - target: {fileID: 8773245527530262074, guid: 143955e6e46b84b4bb4c5d6dd2e3c969,
->>>>>>> Stashed changes
         type: 3}
       propertyPath: m_Name
       value: SM_Env_Asteroid_Field_01
@@ -9149,11 +8990,7 @@ PrefabInstance:
     - target: {fileID: 8779342109721557446, guid: 143955e6e46b84b4bb4c5d6dd2e3c969,
         type: 3}
       propertyPath: m_RootOrder
-<<<<<<< Updated upstream
-      value: 2
-=======
       value: 11
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 8779342109721557446, guid: 143955e6e46b84b4bb4c5d6dd2e3c969,
         type: 3}
@@ -9206,10 +9043,6 @@ PrefabInstance:
       value: -0.002
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-<<<<<<< Updated upstream
-  m_SourcePrefab: {fileID: 100100000, guid: c4fa570ca66ac7e4cbb24db2211297f6, type: 3}
---- !u!1001 &9175715764202283042
-=======
   m_SourcePrefab: {fileID: 100100000, guid: 143955e6e46b84b4bb4c5d6dd2e3c969, type: 3}
 --- !u!1001 &8844948172498792788
 PrefabInstance:
@@ -9350,20 +9183,12 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3dfc95216365e2140be5ccb465a74f86, type: 3}
 --- !u!1001 &9053681915376163667
->>>>>>> Stashed changes
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 796479542}
     m_Modifications:
-<<<<<<< Updated upstream
-    - target: {fileID: 9173935841817760656, guid: f638adac8828c74489f4730b392a6a75,
-        type: 3}
-      propertyPath: m_Name
-      value: Finish
-      objectReference: {fileID: 0}
-=======
     - target: {fileID: 9052374504356868695, guid: eb4dac2604de3d74db0c9697be9b87bc,
         type: 3}
       propertyPath: m_Name
@@ -9433,10 +9258,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
->>>>>>> Stashed changes
     - target: {fileID: 9173935841817760656, guid: f638adac8828c74489f4730b392a6a75,
         type: 3}
-      propertyPath: m_TagString
+      propertyPath: m_Name
       value: Finish
       objectReference: {fileID: 0}
     - target: {fileID: 9176107068861853340, guid: f638adac8828c74489f4730b392a6a75,
